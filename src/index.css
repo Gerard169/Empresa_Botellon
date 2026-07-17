@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+body {
+    @apply min-h-dvh flex flex-col h-full;
+}
+
+body #root{
+    @apply min-h-dvh flex flex-col h-full;
+}
+
+header, main, footer {
+    @apply shadow;
+}
+
+main {
+    @apply flex-1;
+}
+
+header nav ul{
+    @apply list-none flex flex-col gap-1 md:flex-row;
+}
+
+/*Card Css*/
+.card {
+    @apply w-75 shadow rounded-sm;
+}
+
+img.card.header {
+    @apply max-h-50;
+}
+
+img.card-header-img {
+    @apply w-75 h-50 object cover;
+}
