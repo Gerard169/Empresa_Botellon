@@ -30,5 +30,5 @@ img.card.header {
 }
 
 img.card-header-img {
-    @apply w-75 h-50 object cover;
+    @apply w-75 h-50 object-cover;
 }

@@ -1,4 +1,4 @@
-const Galeria = () => {
+const Contacto = () => {
   return (
     <section>
       <h1>Nosotros</h1>
@@ -7,4 +7,4 @@ const Galeria = () => {
   );
 };
 
-export default Galeria;
+export default Contacto;

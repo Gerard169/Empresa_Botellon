@@ -1,51 +1,58 @@
-import Nav from "./components/nav/Nav";
-import { 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Header } from "./components/header";
+import { Footer } from "./components/footer/Footer";
+import {
+  Nosotros,
+  Programas,
+  Eventos,
+  Blog,
+  Galeria,
+  Integracion,
+  Faq,
+  Help,
+  Contacto,
+  Donacion
+} from "./pages";
+
+import {
   Card,
   CardHeaderWithImage,
   CardBody,
   CardFooter
- } from "./components/cards";
+} from "./components/cards";
 import { Counter } from "./components/counter/Counter";
 
-const links = [
-  {
-    text: "Home",
-    href: "",
-    classNames: []
-  },
-  {
-    text: "SignUp",
-    href: "",
-    classNames: []
-  },
-  {
-    text: "SingOut",
-    href: "",
-    classNames: []
-  }
-];
 
 function App() {
-
-
   return (
     <>
-      <header>
-        <div>
-          <h1>Brand Name</h1>
-          <Nav>links={links}</Nav>
-        </div>
-      </header>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/nosotros" element={<Nosotros />} />
+          <Route path="/programas" element={<Programas />} />
+          <Route path="/eventos" element={<Eventos />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/galeria" element={<Galeria />} />
+          <Route path="/integracion" element={<Integracion />} />
+          <Route path="/faq" element={<Faq />} />
+          <Route path="/help" element={<Help />} />
+          <Route path="/contacto" element={<Contacto />} />
+          <Route path="/donacion" element={<Donacion />} />
+
+        </Routes>
+      </BrowserRouter>
+
       <main>
         <h1>hola</h1>
         <section className="flex gap-4">
           <Card>
             <CardHeaderWithImage
-             imgUrl={"https://picsum.photos/id/40/200/300"}
-             altText={"Demo de Imge Header"}/>
+              imgUrl={"https://picsum.photos/id/40/200/300"}
+              altText={"Demo de Imge Header"} />
             <CardBody>
               <strong>Esto es una descripcion</strong>
-              <br/>
+              <br />
               <p>Lorem Ipsum</p>
             </CardBody>
             <CardFooter>
