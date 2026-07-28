@@ -1,10 +1,10 @@
 export { default as Nosotros } from "./Nosotros";
 export { default as Programas } from "./Programas";
 export { default as Eventos } from "./Eventos";
-export { default as Blog } from "./Blog";
+export { default as Blog } from "./blog/Blog";
 export { default as Galeria } from "./Galeria";
 export { default as Integracion } from "./Integracion";
 export { default as Faq } from "./Faq";
 export { default as Help } from "./Help";
-export { default as Contacto } from "./Contacto";
+export { default as Contacto } from "./contacto/Contacto";
 export { default as Donacion } from "./Donacion";
